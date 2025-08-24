@@ -1,69 +1,25 @@
-# React + TypeScript + Vite
+# Betcel Informática
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o site da **Betcel Informática**, desenvolvido com **React**, **TailwindCSS** e **TypeScript**. O site apresenta os serviços da empresa, informações de contato e integração direta com WhatsApp e redes sociais.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔹 Funcionalidades
 
-## Expanding the ESLint configuration
+- **Menu principal com hover:** destaca as opções ao passar o mouse.
+- **Scroll suave:** ao clicar em uma opção do menu, a página rola suavemente até a seção correspondente.
+- **Seção Hero com troca de conteúdo:** setas permitem alternar entre diferentes serviços com efeito de animação.
+- **Integração com WhatsApp:** clique no ícone flutuante ou nos contatos para abrir diretamente o WhatsApp.
+- **Acesso rápido no footer:** navegação interna igual ao menu principal.
+- **Links para redes sociais:** Facebook e Instagram abrem em novas abas.
+- **Footer com informações de contato:** endereço, e-mail e telefone.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔹 Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React**: Biblioteca JavaScript para criação de interfaces.
+- **TailwindCSS**: Framework CSS para estilização rápida e responsiva.
+- **TypeScript**: Superset do JavaScript com tipagem estática.
+- **motion/react**: Para animações suaves nas seções e troca de conteúdo.
+- **MUI Icons**: Ícones do Material UI para WhatsApp, redes sociais e localização.
