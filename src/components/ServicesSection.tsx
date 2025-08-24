@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import services from "../assets/images/printer-services.png"
 
 function ServicesSection() {
   
@@ -28,7 +29,7 @@ function ServicesSection() {
       Consultoria para otimização do seu parque de impressão
       </p> 
       </motion.div>
-      <img src="/src/assets/images/printer-services.png" className="w-140 mb-20"></img>
+      <img src={services} className="w-140 mb-20"></img>
       </div>
   )
 }

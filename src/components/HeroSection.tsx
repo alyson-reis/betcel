@@ -3,6 +3,7 @@ import useTrocaConteudo from "../utils/useContentSwitch";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import printer from "../assets/images/printer-service.jpg"
 
 function HeroSection() {
   const conteudos = [
@@ -23,7 +24,7 @@ function HeroSection() {
   const { conteudoAtual, proximo, anterior, indice } = useTrocaConteudo(conteudos);
 
   return (
-    <div id="home" className="h-screen flex flex-col justify-center bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to right, rgba(56, 129, 153, 0.9), rgba(0,0,0,0)), url('/src/assets/images/printer-service.jpg')" }}> 
+    <div id="home" className="h-screen flex flex-col justify-center bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to right, rgba(56, 129, 153, 0.9), rgba(0,0,0,0)), url(${printer})` }}> 
       
       <div className="ml-20 overflow-hidden">
         <AnimatePresence mode="wait">

@@ -4,13 +4,14 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import {scrollToSection} from '../utils/scrollToSection'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import logo from "../assets/images/logo-betcel-gray.png"
 
 function Footer() {
   return (
 
   <div className="bg-[#333435] h-60 flex justify-evenly pr-20 items-center text-white">
 
-      <img src="/src/assets/images/logo-betcel-gray.png" alt="logo-betcel-cinza" className="h-30" />
+      <img src={logo} alt="logo-betcel-cinza" className="h-30" />
 
       <nav>
         <h2 className="font-medium text-lg mt-4 mb-4">
